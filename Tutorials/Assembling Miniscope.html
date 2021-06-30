@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assembling an OEPS V4.4 Miniscope &#8212; SkillHub 0.0.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">SkillHub</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Tutorials
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Fundamentals/index.html">
+  Fundamentals
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ahleighton/skillhub" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-miniscope">
+   Using the Miniscope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools-and-materials">
+   Tools and Materials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare">
+   1. Prepare
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objective-module">
+   2. Objective Module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excitation-module">
+   3. Excitation Module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#emission-module">
+   4. Emission Module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assembly">
+   5. Assembly
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-before-securing">
+   6. Test before securing
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="assembling-an-oeps-v4-4-miniscope">
+<span id="refminiscopeassembly"></span><h1>Assembling an OEPS V4.4 Miniscope<a class="headerlink" href="#assembling-an-oeps-v4-4-miniscope" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://miniscope.org/">http://miniscope.org/</a> Daniel Aharoni, Federico Sangiuliano and the UCLA Miniscope Team</p>
+<p>See the Miniscope V4 Wiki for more information</p>
+</div>
+<div class="section" id="using-the-miniscope">
+<h2>Using the Miniscope<a class="headerlink" href="#using-the-miniscope" title="Permalink to this headline">¶</a></h2>
+<p>When assembling and using the Miniscope, please take care with the printed circuit board (pcb). The circuitry is exposed on the outside of the scope and can be damaged by electrostatic charges. Prevent this damage by not placing the scope on metal or other conductive surfaces and wearing electrostatic-safe gloves if possible. Make sure that the scope is not physically bumped during experiments; this may lead to damage or very brief power losses in the scope, during which the electrowettinglens can reset to 0, losing your plane of focus.</p>
+</div>
+<div class="section" id="tools-and-materials">
+<h2>Tools and Materials<a class="headerlink" href="#tools-and-materials" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>ESD gloves (to safely handle the PCB and keep lenses and filters clean)</p></li>
+<li><p>Soft cloth (e.g. cloth to clean eyeglasses with)</p></li>
+<li><p>Tweezers/forceps</p></li>
+<li><p>Torx T2 screwdriver</p></li>
+<li><p>Compressed air spray</p></li>
+<li><p>Scalpel/Biopsy punch</p></li>
+<li><p>Padded Vice</p></li>
+<li><p>Epoxy (<a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List#glueepoxy">Overview by UCLA team here</a>)</p></li>
+<li><p>DAQ and Coax Cable</p></li>
+<li><p>Assembly figure</p>
+<blockquote>
+<div><img alt="../_images/mscope_fig-1.png" src="../_images/mscope_fig-1.png" />
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="prepare">
+<h2>1. Prepare<a class="headerlink" href="#prepare" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>a). Check all parts for any Delrin burrs sticking out. Scrape them off with a biopsy punch or tweezers.</p>
+<img alt="../_images/mscope_fig-2.png" src="../_images/mscope_fig-2.png" />
+</div></blockquote>
+</div>
+<div class="section" id="objective-module">
+<h2>2. Objective Module<a class="headerlink" href="#objective-module" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><blockquote>
+<div><p>a). Stand one of the 3x6 mm lenses on a flat surface. Make sure the lens is standing on its flat side- it should not wobble.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/testobjectivelens.mp4" type="video/mp4">
+ </video></center><p>b). Place the objective module directly over the lens and push down. Make sure that you are pushing in a straight line onto the lens, as any angle can cause chipping. Make sure the lens is completely flush with the body and does not stick out.</p>
+<blockquote>
+<div><center><video width="560" height="340" controls>
+   <source src="../_static/videos/objlens01.mp4" type="video/mp4">
+ </video></center></div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="excitation-module">
+<h2>3. Excitation Module<a class="headerlink" href="#excitation-module" title="Permalink to this headline">¶</a></h2>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/exfilter.mp4" type="video/mp4">
+ </video></center>
+
+  a). Locate the arrow on your 470nm excitation filter. This arrow must point towards the light source, in this case towards the LED on the Miniscope PCB.
+
+  b). Press the filter, arrow pointing down, into the excitation module. If it does not fit easily, use a scalpel or biopsy punch to scrape out a small layer of the inner edges of the excitation module to allow the filter to click in.</div>
+<div class="section" id="emission-module">
+<h2>4. Emission Module<a class="headerlink" href="#emission-module" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>a). First, screw a self-threading screw into the hole on the side of the body, then remove the screw again. This is so that you can remove any small burrs that are generated by the self-threading screw. Hold the emission module up-side down and tap to get these burrs out of the body. You can spray compressed air through the module to make sure it is clean.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/screwinout.mp4" type="video/mp4">
+ </video></center><p>b). Find your 4mm, 10mm lens. This one has only a very slight curve at one edge, and should be placed with the curved edge down (in contrast to the objective module lenses). Stand the lens on a flat surface, with the curved edge down. If you press it, it should wobble.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/4mmwobble.mp4" type="video/mp4">
+ </video></center><p>c). Press the emission module down on top of this lens.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/lensinemission.mp4" type="video/mp4">
+ </video></center><p>d). Once it is secure, you can turn the module upside down and, using a cloth on top of the lens, press to ensure the lens is as flush with the module as possible.</p>
+<p>e). Next, place the dichroic filter in the slot on the side of the emission module. The arrow must be facing downwards, towards the 4mm lens.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/dichroic.mp4" type="video/mp4">
+ </video></center><p>f). Look through the top of the module to check that there are no burrs or pieces of visible dust in the scope so far.</p>
+<p>g). If it looks clean, place the half-ball lens in the round pocket on the side of the body. Secure it in place by attaching the excitation module using two screws.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/halfball.mp4" type="video/mp4">
+ </video></center></div></blockquote>
+</div>
+<div class="section" id="assembly">
+<h2>5. Assembly<a class="headerlink" href="#assembly" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>a). Cut the extra tabs from the electrowettinglens PCB.</p>
+<img alt="../_images/mscope_fig-5.png" src="../_images/mscope_fig-5.png" />
+<p>b). Screw the PCB to the excitation module using the two holes.</p>
+<img alt="../_images/mscope_fig-6.png" src="../_images/mscope_fig-6.png" />
+<p>c). Carefully pre-bend the two circles in the PCB (do not press too hard, just gently shape them).</p>
+<p>d). You can now put an EWL in between these circles and attach the objective module to the emission module. Check that the EWL is in the correct orientation.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/ewllens.mp4" type="video/mp4">
+ </video></center><p>e). Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Place the 525 nm filter in the pocket, with the arrow pointing down.</p>
+<p>f). Remove the protective film from the PCB and close the sensor over the top of the scope. You will probably have to hold the PCB in place while you do a first test of the scope.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/peel.mp4" type="video/mp4">
+ </video></center>
+
+
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/closescope.mp4" type="video/mp4">
+ </video></center></div></blockquote>
+</div>
+<div class="section" id="test-before-securing">
+<h2>6. Test before securing<a class="headerlink" href="#test-before-securing" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>a). Connect your Miniscope to a computer using a DAQ and a coaxial cable. Check that:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The EWL allows you to focus electronically.</p></li>
+<li><p>The LED responds to you increasing/decreasing the value.</p></li>
+<li><p>There are no visible specks on the image.</p></li>
+</ul>
+</div></blockquote>
+<p>b). If the scope passes these tests, you can glue the PCB to the emission module. With the scope held in a vice, apply epoxy using a toothpick and leave to dry.</p>
+<center><video width="560" height="340" controls>
+   <source src="../_static/videos/glue.mp4" type="video/mp4">
+ </video></center><p>c). Once the epoxy is fully dry, screw in the PCB flaps.</p>
+</div></blockquote>
+<p>Test the scope one final time, and you are ready to image!</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, Open Ephys &amp; Contributors.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrodes &#8212; SkillHub 0.0.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">SkillHub</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Tutorials/index.html">
+  Tutorials
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Fundamentals
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ahleighton/skillhub" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="electrodes">
+<h1>Electrodes<a class="headerlink" href="#electrodes" title="Permalink to this headline">¶</a></h1>
+<p>Getting from <a class="reference external" href="_refepotential">neuronal activity</a> (Vec) to the input to the recording system (Vin) relies first on the interface between the electrode and the extracellular space. Extracellular microelectrodes are usually made from metallic conductors. A thin insulated metal wire with an exposed tip is the most basic, and still widely used, device for in vivo extracellular recording from brains. Twisting four such wires gives you a <a class="reference external" href="_reftetrodeintro">tetrode</a>. Metals such as platinum, gold, tungsten, iridium, titanium nitride, stainless steel, iridium, iridium oxide, and alloys, nickel-chrome, platinum-iridium and platinum-tungsten have all been used in neural electrodes.</p>
+<img alt="_static/images/EEA/eea_fig-7.png" class="align-center" src="_static/images/EEA/eea_fig-7.png" />
+<center><i> Figure 7: The double layer interface between an electrode and the extracellular fluid.</i></center><p>This transition from ion flow in the extracellular space (neural activity) to electron (electrode) flow is made through the double layer interface. When a metal is placed in a saline solution two phenomena occur: water dipoles close to the metal surface become oriented, and assuming the metal surface is negatively charged, the solution close to the metal surface become depleted of negative ions (anions), leaving behind a cloud of positive ions (cations). This cloud of cations screens the electric field caused by the excess of charge on the metal. Electroneutrality across the interface requires that the charge on the metal is always equal and opposite to the total charge on the solution side of the interface (Musa et al., 2012). The resulting charge distribution - two narrow regions of equal and opposite charge - is known as the electrical double layer (EDL). Figure 10 shows a model for the distribution of electric potential across a metal-solution interface, where the double layer region (represented in pink in the schematics) yields a capacitance Ce which typically has a value around 20 μF cm-2 (Musa, 2011).</p>
+<p>The signal transduction takes place across the electrode-extracellular space when the charge distribution changes on the extracellular fluid side. The electric potential variation in the extracellular space is accompanied by a redistribution of the ion concentration close to the metal electrode, and hence, changes in the electrode’s charges.</p>
+<div class="section" id="how-does-the-electrode-detect-vec">
+<h2>How does the electrode detect Vec?<a class="headerlink" href="#how-does-the-electrode-detect-vec" title="Permalink to this headline">¶</a></h2>
+<p>Neuronal membranes have resistance- they are resistors. They also have capacitance, just as anything that is made up of two conducting layers, separated by a non-conducting layer, will have capacitance. We can extract the electrical behaviour of neural membranes and electrodes by making an ‘equivalent circuit’, which describes their electrical properties.</p>
+<img alt="_static/images/EEA/eea_fig-8.png" class="align-center" src="_static/images/EEA/eea_fig-8.png" />
+<center><i> Figure 8: The equivalent circuit describes the electrical properties of the double-layer interface between electrode and extracellular fluid.</i></center><p>In the above figure, the interface between the solution and the electrode is represented by a parallel ReCe combination in series with resistances Rm (metal) and Rs (solution).
+•       Re represents leakage resistance; the charge transfer due to charge carriers crossing the electrical double layer.
+•       Ce is the capacitance of the electrical double layer at the interface of the exposed metal and the solution.
+Usually Re and Rs are small. For example, a tungsten microelectrode as the one used by Hubel and Wiesel in the 1950’s and 60’ has a value for Rm ~ 10 to 100 Ohm
+(Rm= (resistivity x length)/ cross sectional area), a Ce ~ 0.2 pF / um2 ~ 10 - 20 pF (unplated) and Re ~ 10 to 100 MOhm. This microelectrode is considered a ‘polarized’ electrode.
+There are two general types of electrode, ‘non-polarised’ and ‘polarized’. Each has a different mechanism through which ion flow in the solution leads to electron flow in the electrode.</p>
+</div>
+<div class="section" id="non-polarized-electrodes">
+<h2>Non-polarized electrodes<a class="headerlink" href="#non-polarized-electrodes" title="Permalink to this headline">¶</a></h2>
+<p>The well-known silver-silver chloride (Ag-AgCl) electrode approaches the ideal nonpolarizable type. In these ‘charge transfer’ electrodes, surface-confined species are oxidized and reduced (Bard &amp; Faulkner, 2001, Merrill et al., 2005).
+Non-polarizable electrodes have a small Re, allowing charge-transfer across the electrode-solution interface. If Re is small, it bypasses the capacitor Ce, thus providing a DC path for the measurement of steady potential levels.</p>
+</div>
+<div class="section" id="polarized-electrodes">
+<h2>Polarized electrodes<a class="headerlink" href="#polarized-electrodes" title="Permalink to this headline">¶</a></h2>
+<p>Alternatively, the transition from ion flow in the solution to electron flow in the electrode could be of capacitive nature, involving the charging and discharging of the electrode-solution double layer. This happens with noble metal (e.g., stainless steel, gold and platinum) electrodes, where no charge transfer can occur across the metal-solution interface. Instead, electrode polarization is required to motivate current flow in the external recording circuit. In metals, such as aluminium and copper, charge transfer occurs and causes metal’s deterioration (i.e., oxidation).
+The value of Re of polarized electrodes is large, in the order of several megohms, and the effective equivalent circuit is dominated by the capacitor, Ce. Therefore, processes in polarizable electrodes are purely electrostatic and caused by the charging and discharging of the double layer capacitance. Although charge does not cross the interface, external currents can flow when the potential or solution composition changes (Cooper, 1971).</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, Open Ephys &amp; Contributors.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
