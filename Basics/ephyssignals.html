@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrophysiology: Signals &#8212; SkillHub 0.0.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">SkillHub</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Tutorials/index.html">
+  Tutorials
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ahleighton/skillhub" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neurons-ions-and-membrane-potential">
+   Neurons, Ions and Membrane Potential
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuronal-output-action-potentials">
+     Neuronal output: Action Potentials
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuronal-input-postsynaptic-potentials">
+     Neuronal input: Postsynaptic potentials
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-extracellular-space">
+     The extracellular space
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="electrophysiology-signals">
+<span id="refephyssignals"></span><h1>Electrophysiology: Signals<a class="headerlink" href="#electrophysiology-signals" title="Permalink to this headline">¶</a></h1>
+<p>Electrophysiologists measure biologically generated electrical signals. The source of these signals will depend on the scientific or medical question;  signals can be recorded from various tissues (e.g. the brain, heart, muscles) and different cells (excitatory, inhibitory). Sometimes we are interested in the activity of a single neuron, and sometimes in the combined activity of large populations of cells. See <a class="reference external" href="refephysmethods">here</a> for an overview of different methods of electrophysiology.</p>
+<p>What they have in common is that these signals are measured in Volts: they are therefore measurements of electric potential difference. Changes in electric potential difference are mediated by <a class="reference external" href="refchargedparticles">charged particles</a>, usually ions. These ions can cross cell membranes, both into and out of cells.</p>
+<div class="section" id="neurons-ions-and-membrane-potential">
+<h2>Neurons, Ions and Membrane Potential<a class="headerlink" href="#neurons-ions-and-membrane-potential" title="Permalink to this headline">¶</a></h2>
+<p>Neuronal activity relies mainly on ions such as <a href="#id1"><span class="problematic" id="id2">|Na+|</span></a>, <a href="#id3"><span class="problematic" id="id4">|K+|</span></a>, <a href="#id5"><span class="problematic" id="id6">|Ca2+|</span></a>. Whenever these charges flow, we have a <strong>current</strong>. In neurons, our <strong>resistance</strong> to current flow is formed by the permeability of the cell membrane to our ion, and changed by opening or closing ion channels in the membrane. When more channels open, the resistance to a certain ion is lowered, and the charge is able to flow in or out of the cell.</p>
+<p>The driving force in this scenario is the membrane potential, i.e. the difference in electric potential between the inside of the cell membrane and the extracellular fluid. A neuron typically has a resting membrane potential of around -70 mV compared to the extracellular fluid, if we decide that the extracellular fluid has 0 V.</p>
+<p>Ions in neurons are influenced by electric forces and a second driving force, namely their concentration gradients. Ions will tend to diffuse away from areas where there is a high concentration of the ion, to areas with a lower concentration. The interaction of the concentration and electrical driving forces is the electrochemical gradient and this balance is described by the Nernst equation, read <a class="reference external" href="https://journals.physiology.org/doi/pdf/10.1152/advan.00029.200">Wright 2004</a> for a clear refresher on this, and to understand how the -70mV is maintained by the cell.</p>
+<div class="section" id="neuronal-output-action-potentials">
+<h3>Neuronal output: Action Potentials<a class="headerlink" href="#neuronal-output-action-potentials" title="Permalink to this headline">¶</a></h3>
+<p>When an input signal (a receptor potential or synaptic potential) depolarizes the cell membrane, this change in membrane electric potential can open <a href="#id7"><span class="problematic" id="id8">|Na+|</span></a> ion channels, greatly reducing membrane resistance to <a href="#id9"><span class="problematic" id="id10">|Na+|</span></a>. The reduction in membrane resistance to <a href="#id11"><span class="problematic" id="id12">|Na+|</span></a> depolarises the cell. <a href="#id13"><span class="problematic" id="id14">|Na+|</span></a> can then follow its concentration and electrical gradient from outside the cell, where the <a href="#id15"><span class="problematic" id="id16">|Na+|</span></a> concentration is high, to the inside of the cell, where <a href="#id17"><span class="problematic" id="id18">|Na+|</span></a> concentration is low and the intracellular medium has a lower potential (Kandel, Schwartz, &amp; Jessel, 2000). In neurons, voltage-sensitive <a href="#id19"><span class="problematic" id="id20">|Na+|</span></a> channels are usually concentrated at the initial segment of the axon, and it is therefore more likely that an action potential will be generated there rather than in other regions of the cell. The subsequent opening of <a href="#id21"><span class="problematic" id="id22">|K+|</span></a> channels begins the process of returning the membrane potential to resting conditions (Hodgkin and Huxley, 1939).</p>
+<p>When we perform extracellular recordings, we are measuring the effect of these currents outside of the cell. The extracellular potential Vec at position re, with respect to a point at infinity, can be computed with the following equation (Einevoll et al., 2013; Nunez and Srinivasan, 2006):</p>
+<img alt="_static/images/EEA/eea_fig-68.png" class="align-center" src="_static/images/EEA/eea_fig-68.png" />
+<center><i> Equation 4: The point source equation.</i></center><p>Conceptually, this point-source equation (Equation 4) is key for computing the extracellular potential in response to any transmembrane current (Buzsaki et al., 2012). In(t) represents the nth point current source and re – rn  represents the distance between the point source and the position of measurement, with n = 1…N, where N is the number of individual point sources and ρ is the extracellular conductivity. If the extracellular medium is considered homogeneous and isotropic, we can use a constant conductivity value (Einevoll et al., 2013).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_static/images/EEA/eea_fig-4.png" class="align-center" src="_static/images/EEA/eea_fig-4.png" />
+<center><h5 class="card-title" >Figure 4: Electric potential generated by current sources in a conductive volume.
+  <p style="font-size:12px">  Electric potential generated by current sources in a conductive volume. The extracellular potentials and currents are adapted from Gold et al., 2006. The shape of the extracellular potential waveforms at various spatial positions 're' (marked with black dots) are simulated for a CA1 pyramidal neuron.
+  Currents: simulated net membrane current (first column) across the soma and proximal dendrites that best estimates the extracellular potential waveform and membrane current components in terms of Na+, K+ and capacitive currents (second column). In the soma, the positive capacitive current coincides with the larger Na+ current. At locations along the apical trunk, the initial capacitive peak becomes visible. In dendritic compartments the membrane depolarization is initially driven by Na+ current from the soma, until local Na+ currents are activated and the action potential regenerates. In the brief time before the local Na+ currents activate, the positive capacitive current is the dominant membrane current and a capacitive-dominant phase is visible in the net current (Gold et al., 2006).</p></h5></center><p>To detect the presence of an active neuron nearby in the extracellular space, the electric potential relative to some distant reference point must be measured. The model presented in Fig 4 illustrates how the electric potential varies nearby an active neuron. The extracellular potential waveforms usually last on the order of 1-2 ms, and are in the range of tens to hundreds of microvolts in amplitude, with the largest potential deflections being detected close to the soma of a neuron. These stereotypical temporal deflection of the electric potential in the extracellular space are called action potentials or spikes.
+Fig 4 depicts the time-varying extracellular potential at given locations (<a href="#id23"><span class="problematic" id="id24">|Re|</span></a>) that resulted from the superposition of the ionic and capacitive transmembrane currents formed when a neuron was active. The difference in potential waveforms at different locations in the extracellular medium is mainly given by the shape of the net current (Fig 4, left column) across the membrane. Furthermore, the peaks in the potential waveforms correspond to the current (Fig 4, right column) that is dominant at that time-point: the first positive peak of the waveform is attributed to the positive capacitive current resulting from the strong <a href="#id25"><span class="problematic" id="id26">|Na+|</span></a>  current entering the axon initial segment; the main negative peak is attributed to the influx of <a href="#id27"><span class="problematic" id="id28">|Na+|</span></a>; and finally, the second positive peak results from repolarizing <a href="#id29"><span class="problematic" id="id30">|K+|</span></a> current flowing out of the cell (Gold et al., 2006).</p>
+</div>
+<div class="section" id="neuronal-input-postsynaptic-potentials">
+<h3>Neuronal input: Postsynaptic potentials<a class="headerlink" href="#neuronal-input-postsynaptic-potentials" title="Permalink to this headline">¶</a></h3>
+<p>Slower frequencies in extracellular recordings are the focus of the LFP or EEG. These are thought to be largely generated by postsynaptic potentials, as these occur over slower timescales (10s of ms) than the action potential (1-2 ms), so there is more opportunity for signals from multiple cells to summate and result in larger signals. When activated, AMPA and NMDA synapses mediate excitatory currents as <a href="#id31"><span class="problematic" id="id32">|Na+|</span></a> and <a href="#id33"><span class="problematic" id="id34">|Ca2+|</span></a> enter the cell. In our extracellular recordings, the direction of a deflection caused by an excitatory current (whether it is positive or negative) will depend on where the electrode is relative to the neuron.</p>
+</div>
+<div class="section" id="the-extracellular-space">
+<h3>The extracellular space<a class="headerlink" href="#the-extracellular-space" title="Permalink to this headline">¶</a></h3>
+<p>In the practical exercises for this course, we will be using electrodes attached to the skin. In animal models, we often use electrodes in the extracellular space. To keep things simple, most text book cartoons will draw neurons in the brain with a few synapses and lots of extracellular space in between each cell. If we were to stain all the dendrites and axons from every neuron in a slice of brain tissue, the result would be a solid black picture. A rat brain has about 200 million (and a human brain has about 86 billion) neurons tightly packed together (Herculano-Houzel, 2009). The density in the rat cortex is between 40,000 to 100,000 neurons per mm3 (Defelipe et al., 2002; Markram et al., 2015; Meyer and Moser, 2010). In addition to neuronal cell bodies, axonal fibres, and dendritic structures, the brain also contains glial cells and blood vessels. Very little of the extracellular space is actually “space”; indeed, extracellular fluid is thought to comprise only 12–25 % of the brain’s volume (Nelson et al., 2013; Tønnesen, Inavalli, &amp; Nägerl, 2018). The potential Vec induced by the transmembrane currents depends on the magnitude, sign and location of the current sources, and on the conductivity of the extracellular medium (Buzsaki et al., 2012; Nunez and Srinivasan, 2006).</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, Open Ephys &amp; Contributors.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
