@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The equivalent circuit of the electrode &#8212; SkillHub 0.0.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">SkillHub</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../indexbasics.html">
+  Electrophysiology Acquisition
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Contact/disclaimer_terms_conditions.html">
+  Terms and Conditions
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ahleighton/skillhub" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="the-equivalent-circuit-of-the-electrode">
+<h1>The equivalent circuit of the electrode<a class="headerlink" href="#the-equivalent-circuit-of-the-electrode" title="Permalink to this headline">¶</a></h1>
+<p>In the theory handout, we discussed how we can represent an electrode as a circuit containing a resistance and a capacitance. We’ll now build this equivalent circuit in the simulator. We will use this to examine the relationship between <a href="#id1"><span class="problematic" id="id2">|Vec|</span></a> and <a href="#id3"><span class="problematic" id="id4">|Vin|</span></a>, i.e., how faithfully the electrode transfers the signal from our neuron to our recording system.</p>
+<ol class="upperalpha simple">
+<li><p>Use the simulator to build the equivalent circuit of the electrode as shown below:</p></li>
+</ol>
+<img alt="_static/images/EEA/eea_fig-9.png" class="align-center" src="_static/images/EEA/eea_fig-9.png" />
+<p>Here are some values to use:</p>
+<ul class="simple">
+<li><p><a href="#id5"><span class="problematic" id="id6">|Rm|</span></a>: the DC resistance of the metal electrode wire, 10-100 Ohms.</p></li>
+<li><p>Ce: the electrode tip capacitance, generated by the double layer generated around the electrode.  <a href="#id7"><span class="problematic" id="id8">|Ce|</span></a> ~ 0.2 pF / µm2, so around 10 - 20 pF (if the electrode is unplated)</p></li>
+<li><p><a href="#id9"><span class="problematic" id="id10">|Re|</span></a>: electrode tip resistance, in parallel with <a href="#id11"><span class="problematic" id="id12">|Ce|</span></a>. ~ 10 to 100 MOhm.</p></li>
+<li><p><a href="#id13"><span class="problematic" id="id14">|Cs|</span></a> is the input shunt capacitance, due to the capacitance along the insulated portion of the electrode and wire (~50-100 pF).</p></li>
+</ul>
+<ol class="upperalpha simple" start="2">
+<li><p>We can’t see much without an input signal. Add a 1KHz alternating voltage supply to mimic the signal coming from your cell.</p></li>
+<li><p>Visualise the 1KHz input in the scope.</p></li>
+<li><p>Add a new scope with the signal as seen by the end of the electrode wire. This allows us to compare the signal at the extracellular fluid (<a href="#id15"><span class="problematic" id="id16">|Vec|</span></a>) with what we’re getting out of our electrode (<a href="#id17"><span class="problematic" id="id18">|Vin|</span></a>). How are they different?</p></li>
+</ol>
+<p>The DC resistance of the wire, <a href="#id19"><span class="problematic" id="id20">|Rm|</span></a>, is very low, so the voltage drop over it is tiny. We can treat this as a short circuit.</p>
+<ol class="upperalpha simple" start="5">
+<li><p>Stop the simulation and remove this resistance. You should see that this hardly influences the relationship between the input and output of your electrode. We can therefore simplify our equivalent circuit by leaving this resistance out.</p></li>
+<li><p><a href="#id21"><span class="problematic" id="id22">|Re|</span></a> and <a href="#id23"><span class="problematic" id="id24">|Ce|</span></a> are in parallel, and because <a href="#id25"><span class="problematic" id="id26">|Re|</span></a> has such a high resistance, little current will actually travel over this resistor: <a href="#id27"><span class="problematic" id="id28">|Ce|</span></a> will have a much bigger effect on the circuit. Simplify the circuit even further by deleting <a href="#id29"><span class="problematic" id="id30">|Re|</span></a>.</p></li>
+</ol>
+<p>We’re left with our electrode and the long wire represented by two capacitors (<a href="#id31"><span class="problematic" id="id32">|Ce|</span></a> and <a href="#id33"><span class="problematic" id="id34">|Cs|</span></a>).
+Above, we described a voltage divider made of two (or more) resistors. Capacitors in series can act as a voltage divider too, splitting the input voltage up according to the ratio of resistance (impedance in the case of capacitors) that they provide.</p>
+<ol class="upperalpha simple" start="7">
+<li><p>What is the ratio between <a href="#id35"><span class="problematic" id="id36">|Ce|</span></a> and <a href="#id37"><span class="problematic" id="id38">|Cs|</span></a> at the moment? How much of our voltage <a href="#id39"><span class="problematic" id="id40">|Vec|</span></a> is reaching the output of our electrode, <a href="#id41"><span class="problematic" id="id42">|Vin|</span></a>?  What could we change to get more of our voltage signal reaching the output? Try changing values in the simulator to get a larger amplitude output signal.</p></li>
+</ol>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, Open Ephys &amp; Contributors.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
