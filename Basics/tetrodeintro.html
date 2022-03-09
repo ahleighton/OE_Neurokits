@@ -34,6 +34,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Mapping Channels" href="../Tutorials/Channel_Mapping.html" />
+    <link rel="prev" title="What is synchronization?" href="sync.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -51,9 +53,11 @@
   <div id="navbar-start">
     
     
+
 <a class="navbar-brand" href="../index.html">
-<p class="title">SkillHub</p>
+  <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
 </a>
+
 
     
   </div>
@@ -68,9 +72,15 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../indexbasics.html">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
   Electrophysiology Acquisition
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Tutorials/index.html">
+  Tutorials
  </a>
 </li>
 
@@ -114,7 +124,124 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="acboard.html">
+   Acquisition Boards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="amplifiers.html">
+   Amplifiers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="connectors.html">
+   Connectors and Cables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="electrodes.html">
+   Electrodes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="electronicsrefresher.html">
+   Electronics Refresher
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ephysmethods.html">
+   Different Electrophysiology Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ephyssignals.html">
+   Electrophysiology: Signals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="filtering.html">
+   Filtering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="goldplating.html">
+   Reducing electrode impedance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="groundvsreference.html">
+   Ground vs Reference
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="headstage.html">
+   Headstages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="howcellisnegative.html">
+   Resting Membrane Potential
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="impedance.html">
+   Impedance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intanpinout.html">
+   Intan Pinout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="io.html">
+   Inputs/Outputs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="software.html">
+   Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sync.html">
+   What is synchronization?
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tetrodes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tutorials/Channel_Mapping.html">
+   Mapping Channels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tutorials/Miniscope_Assembly.html">
+   Assembling an OEPS V4.4 Miniscope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tutorials/Using%20OE%20Acquisition%20Board%20for%20EEG.html">
+   Using the OE Acquisition Board for EEG
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tutorials/edit_our_docs.html">
+   How to edit Open Ephys Docs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tutorials/index.html">
+   Tutorials
+  </a>
+ </li>
+</ul>
+
   </div>
 </nav>
               </div>
@@ -145,13 +272,13 @@
 <p>Tetrodes are usually held in place with a tetrode drive such as the <span class="xref std std-ref">shuttleDrive</span> which is attached to the skull and allows individual tetrodes to be lowered into the brain to target the cells of interest.</p>
 <p>At the top of the tetrode, each individual wire is pinned to a separate channel on the Electrode Interface Board (EIB,  right insert). Gold pins ensure good contact between the tetrode and the conducting vias (holes) in the interface board. Data from each channel travels on to the headstage. In the headstage chip, signals are amplified and digitized before being sent to the <a class="reference internal" href="acboard.html#refacboard"><span class="std std-ref">Acquisition Board</span></a>.</p>
 <p>For clarity, only one tetrode is shown here, but the mouse shuttleDrive can hold 16 tetrodes (64 channels).</p>
-<img alt="_static/images/EEA/eea_fig-1.png" class="align-center" src="_static/images/EEA/eea_fig-1.png" />
+<img alt="../_images/eea_fig-1.png" class="align-center" src="../_images/eea_fig-1.png" />
 <section id="why-use-tetrodes">
 <h2>Why use tetrodes?<a class="headerlink" href="#why-use-tetrodes" title="Permalink to this headline">¶</a></h2>
 <p>Each tetrode has four conducting tips, which are all at slightly different places in the tissue. This gives us an advantage when trying to assign spikes to separate neurons. If a neuron close to the tetrode spikes, the action potential is likely to be picked up by multiple channels, each at a different distance to the cell. Having the same spike recorded on 4 channels gives us a 4-dimensional ‘description’ of a spike, making it easier to distinguish spikes from different individual cells, increasing the number of single units we can record from in one go.</p>
 <p>For instance, in the image on the left, we can see our tetrode with two neighbouring cells (orange and purple). On the right, we have detected two events (red squares) which cross our event detection threshold. If we were recording from a single electrode, it would be difficult or impossible to discover whether these spikes were from the same or from different cells. However, because we can see the same spike on four channels, we have much more information. On some channels the orange cell consistently has a much higher amplitude than the red cell, giving us a higher chance of separating these units and getting an overall higher yield of cells per recording.</p>
 <p>Another advantage of tetrodes is that external noise and multi-unit activity is typically the same across channels. If your spike is different across channels, this is helpful confirmation that it is a real neuron and not just noise.</p>
-<img alt="_static/images/EEA/eea_fig-3.png" class="align-center" src="_static/images/EEA/eea_fig-3.png" />
+<img alt="../_images/eea_fig-3.png" class="align-center" src="../_images/eea_fig-3.png" />
 </section>
 <section id="making-tetrodes">
 <h2>Making tetrodes<a class="headerlink" href="#making-tetrodes" title="Permalink to this headline">¶</a></h2>
@@ -168,6 +295,20 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="sync.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">What is synchronization?</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Tutorials/Channel_Mapping.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Mapping Channels</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
               
           </main>

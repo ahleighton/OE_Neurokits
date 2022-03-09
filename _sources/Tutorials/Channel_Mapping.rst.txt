@@ -14,7 +14,7 @@ Making your channel map
 ---------------------------------------
 To build this map, we will have to follow the conducting trace from the electrode (tetrode tip or pad on a silicon probe) through the acquisition system to our software. We can do this using 'pinout' maps or charts, which describe which pin in a connector correspond to what function or channel.
 
-.. image:: ../_static/images/tutorials/map_tetrode.png
+.. image:: ../_static/images/Tutorials/map_tetrode.png
 
 To make a channel map, you will need:
 
@@ -26,15 +26,15 @@ Example mapping
 --------------------------------------
 Let's say you were using an Intan RHD 32-channel headstage (part #C3324) and the Open Ephys Omnetics 32-channel Shuttledrive EIB, and you wanted to know which channels in the Open Ephys GUI corresponded to Tetrode 1 (marked in orange on the EIB below).
 
-.. image:: ../_static/images/tutorials/trace_EIB.png
+.. image:: ../_static/images/Tutorials/trace_EIB.png
 
 You would start at the EIB pinout diagram  below. You can follow the EIB trace to find that tetrode 1 A-D corresponds to P5,P7,P9 and P11 on the Omnetics connector.
 
-.. figure:: ../_static/images/tutorials/pinout_EIB.png
+.. figure:: ../_static/images/Tutorials/pinout_EIB.png
 
 Next, we need to find which pins on the headstage will be connected to P5,P7,P9 and P11 on the EIB.
 
-.. image:: ../_static/images/tutorials/map_tetrode.png
+.. image:: ../_static/images/Tutorials/map_tetrode.png
 
 When you connect the headstage, ground (G) and reference (R) on the headstage must contact the ground and reference pins on the EIB. Use these points to make sure you have the correct orientation of your headstage and EIB relative to each other.
 

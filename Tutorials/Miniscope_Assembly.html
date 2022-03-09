@@ -34,6 +34,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using the OE Acquisition Board for EEG" href="Using%20OE%20Acquisition%20Board%20for%20EEG.html" />
+    <link rel="prev" title="Mapping Channels" href="Channel_Mapping.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -51,9 +53,11 @@
   <div id="navbar-start">
     
     
+
 <a class="navbar-brand" href="../index.html">
-<p class="title">SkillHub</p>
+  <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
 </a>
+
 
     
   </div>
@@ -68,9 +72,15 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../indexbasics.html">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../Basics/index.html">
   Electrophysiology Acquisition
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Tutorials
  </a>
 </li>
 
@@ -114,7 +124,124 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/acboard.html">
+   Acquisition Boards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/amplifiers.html">
+   Amplifiers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/connectors.html">
+   Connectors and Cables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/electrodes.html">
+   Electrodes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/electronicsrefresher.html">
+   Electronics Refresher
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/ephysmethods.html">
+   Different Electrophysiology Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/ephyssignals.html">
+   Electrophysiology: Signals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/filtering.html">
+   Filtering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/goldplating.html">
+   Reducing electrode impedance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/groundvsreference.html">
+   Ground vs Reference
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/headstage.html">
+   Headstages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/howcellisnegative.html">
+   Resting Membrane Potential
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/impedance.html">
+   Impedance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/intanpinout.html">
+   Intan Pinout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/io.html">
+   Inputs/Outputs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/software.html">
+   Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/sync.html">
+   What is synchronization?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Basics/tetrodeintro.html">
+   Tetrodes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Channel_Mapping.html">
+   Mapping Channels
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Assembling an OEPS V4.4 Miniscope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Using%20OE%20Acquisition%20Board%20for%20EEG.html">
+   Using the OE Acquisition Board for EEG
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="edit_our_docs.html">
+   How to edit Open Ephys Docs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Tutorials
+  </a>
+ </li>
+</ul>
+
   </div>
 </nav>
               </div>
@@ -245,7 +372,7 @@
                 
   <section id="assembling-an-oeps-v4-4-miniscope">
 <span id="refminiscopeassembly"></span><h1>Assembling an OEPS V4.4 Miniscope<a class="headerlink" href="#assembling-an-oeps-v4-4-miniscope" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/outline.jpg"><img alt="../_images/outline.jpg" src="../_images/outline.jpg" style="width: 701.6999999999999px; height: 495.9px;" /></a>
+<a class="reference internal image-reference" href="_static/images/v44_assembly/outline.jpg"><img alt="_static/images/v44_assembly/outline.jpg" src="_static/images/v44_assembly/outline.jpg" /></a>
 <section id="acknowledgements">
 <h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference external" href="http://miniscope.org/">UCLA Miniscope</a> is an ongoing open-source project from Daniel Aharoni’s lab. See the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki">Miniscope V4 Wiki</a> for more information about this project.</p>
@@ -264,12 +391,12 @@
 <li><p>Epoxy (<a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List#glueepoxy">Overview by UCLA team here</a>)</p></li>
 <li><p>DAQ and Coax Cable</p></li>
 </ul>
-<img alt="../_images/mscope_fig-1.png" src="../_images/mscope_fig-1.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-1.png" src="_static/images/v44_assembly/mscope_fig-1.png" />
 </section>
 <section id="prepare">
 <h2>1. Prepare<a class="headerlink" href="#prepare" title="Permalink to this headline">¶</a></h2>
 <p>a). Check all parts for any Delrin burrs sticking out. Scrape them off with a biopsy punch or tweezers.</p>
-<img alt="../_images/mscope_fig-2.png" src="../_images/mscope_fig-2.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-2.png" src="_static/images/v44_assembly/mscope_fig-2.png" />
 </section>
 <section id="objective-module">
 <h2>2. Objective Module<a class="headerlink" href="#objective-module" title="Permalink to this headline">¶</a></h2>
@@ -278,7 +405,7 @@
 <source src="../_static/videos/testobjectivelens.mp4" type="video/mp4">
 </video></center><p>b). Place the objective module directly over the lens and push down. Make sure that you are pushing in a straight line onto the lens, as any angle can cause chipping. You may have to use some force to do this, if the objective module is a bit tight (you can hear in the video that it makes a sound). Downward force is ok <em>as long as the lens and objective module are completely aligned</em>. If you see the lens stick out at an angle, remove it and reposition it.</p>
 <p>Make sure the lens is completely flush with the body and does not stick out.</p>
-<img alt="../_images/mscope_fig-9.png" src="../_images/mscope_fig-9.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-9.png" src="_static/images/v44_assembly/mscope_fig-9.png" />
 <center><video width="560" height="340" controls>
 <source src="../_static/videos/objlens01.mp4" type="video/mp4">
 </video></center><p>c). Once the lens is flush with the edge of the objective module, clean the edge of the lens with a soft cloth.</p>
@@ -286,7 +413,7 @@
 <p class="admonition-title">Warning</p>
 <p>Important: sometimes extra burrs come off due to the first lens. If they are not removed before inserting the second lens, they can become trapped between the two, which interferes with your image and is difficult to remove. To prevent this problem, inspect the module for small Delrin burrs once more. If they are already loose, you can tap the module gently to allow them to fall out. Otherwise, you can scrape them off using forceps. Be careful not to scratch the lens.</p>
 </div>
-<img alt="../_images/mscope_fig-3.png" class="align-center" src="../_images/mscope_fig-3.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-3.png" class="align-center" src="_static/images/v44_assembly/mscope_fig-3.png" />
 <p>d). Then, repeat this with the second 3x6 mm lens, again making sure that the lens is standing on its flat edge. Push the objective module down until the second lens is flush with the edge of the objective module.</p>
 </section>
 <section id="excitation-module">
@@ -323,9 +450,9 @@
 <section id="assembly">
 <h2>5. Assembly<a class="headerlink" href="#assembly" title="Permalink to this headline">¶</a></h2>
 <p>a). Cut the extra tabs from the electrowettinglens PCB.</p>
-<img alt="../_images/mscope_fig-5.png" src="../_images/mscope_fig-5.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-5.png" src="_static/images/v44_assembly/mscope_fig-5.png" />
 <p>b). Screw the PCB to the excitation module using the two holes.</p>
-<img alt="../_images/mscope_fig-6.png" src="../_images/mscope_fig-6.png" />
+<img alt="_static/images/v44_assembly/mscope_fig-6.png" src="_static/images/v44_assembly/mscope_fig-6.png" />
 <p>c). Carefully pre-bend the two circles in the PCB (do not press too hard, just gently shape them).</p>
 <p>d). You can now put an EWL in between these circles and attach the objective module to the emission module. Check that the EWL is in the correct orientation.</p>
 <center><video width="560" height="340" controls>
@@ -402,6 +529,20 @@ You want the center of your image to be very clean, however some dust/dirt can b
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Channel_Mapping.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Mapping Channels</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Using%20OE%20Acquisition%20Board%20for%20EEG.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using the OE Acquisition Board for EEG</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
               
           </main>

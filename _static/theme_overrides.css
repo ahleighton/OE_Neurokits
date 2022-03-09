@@ -17,69 +17,52 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 400;
-  src: local('ProximaNova-Regular'),
-  local('Proxima Nova Regular'),
-  url('proximanova-webfont.woff2') format('woff2'),
-  url('proximanova-webfont.woff') format('woff');
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Proxima Nova Semibold'),
-  local('ProximaNova-Semibold'),
-  url('proximanova_medium-webfont.woff2') format('woff2'),
-  url('proximanova_medium-webfont.woff') format('woff');
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Italic.ttf");
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Proxima Nova Light'),
-  local('ProximaNova-Light'),
-  url('proximanova_light-webfont.woff2') format('woff2'),
-  url('proximanova_light-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: "Miso";
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Bold.ttf");
   font-weight: bold;
-  src: url("fonts/miso.woff")  format('woff');
 }
 
-/* navigation bar colors*/
+/* navigation bar: main upper bar color*/
 .navbar {
-  background: #5fb5dc !important;
-  font-family: 'Proxima Nova';
+  background: #80aab0 !important;
   font-size: 1em;
 }
 
+/* navigation bar: text background color and text color when selected*/
 .navbar-nav > .active > .nav-link {
-  background-color: #f4d050 !important;
-  color: #e6f7ff!important;
+  background-color: #e6eddf !important;
+  color: #2f401f !important;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
 
+/* navigation bar: text color of active page when hovered*/
 .navbar-nav > .active > .nav-link:hover {
-  color: #519141 !important;
+  color: #2f401f !important;
   transition-duration: 0.4s;
 }
 
 .navbar a {
   color: white !important;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Bitter", sans-serif;
   transition-duration: 0.4s;
   margin-right: 10px;
 }
 
+/* navigation bar: text color of page titles when hovered*/
 .navbar a:hover {
-  color: #f9f2d5 !important;
+  color: #2f401f !important;
   transition-duration: 0.4s;
 }
 
@@ -103,24 +86,39 @@
   border-left: 2px solid #da714a;
 }
 
-/* body links (external) */
-a.reference.external {
-  color: #5CAFBC;
+/* body links (all) */
+a {
+  color: #0086b3;
 }
 
-a.reference.external:hover {
-  color: #82D3E0;
+a:hover {
+  color: #004d66;
   text-decoration: none;
 }
 
-/* body links (internal) */
-a.reference.internal {
-  color: #5CAFBC;
+a.reference.external:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: ' \f35d';
+  font-size: 0.5em;
+  vertical-align: super;
 }
 
-a.reference.internal:hover {
-  color: #82D3E0;
-  text-decoration: none;
+a.external-link:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: ' \f35d';
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+p.card-reference {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  font-size: 1.1em;
+  color: #80aab0;
 }
 
 /* header links */
@@ -130,11 +128,10 @@ a.headerlink {
 }
 
 a.headerlink:hover {
-  color: #82D3E0
+  color: #ceacca;
   background-color: white;
   transition-duration: 0.2s;
 }
-
 /* text fonts and colors */
 body {
   background-color: white;
@@ -167,7 +164,7 @@ h2 {
 }
 
 h3 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 2rem 0 1.05rem;
   font-family:"Miso", sans-serif;
   font-weight: 400;
   line-height: 1.15;
@@ -176,7 +173,7 @@ h3 {
 }
 
 h4 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 2rem 0 1.05rem;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   line-height: 1.15;
@@ -185,7 +182,7 @@ h4 {
 }
 
 h5 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 2rem 0 1.05rem;
   font-family: "Proxima Nova", sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -196,7 +193,7 @@ h5 {
 }
 
 h6 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 2rem 0 1.05rem;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
   line-height: 1.15;
@@ -360,6 +357,9 @@ form:focus {
 /* ol.simple {
   margin-bottom: 1em;
 }
+
+
+
 ul.simple {
   margin-bottom: 1em;
 }
@@ -382,113 +382,25 @@ p {
   margin: 0.3em 0;
 }
 
-
-/* Shadow around images and stay in column bounds*/
-
+/* ensure images stay within the column bounds*/
 img {
-  max-width: 100%!important;
-  height: auto;
-  object-fit: contain;
- /*border:2px solid #fff;
-  /*box-shadow: 8px 8px 3px #ccc;
-  -moz-box-shadow: 8px 8px 3px #ccc;
-  -webkit-box-shadow: 8px 8px 3px #ccc;
-  -khtml-box-shadow: 8px 8px 3px #ccc;*/
+  max-width: 100%;
 }
 
+/* allow center-aligned images*/
+
+img.align-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 /* change color of Twitter logo */
 i.fa-twitter-square:before {
   color: #333;
 }
 
-.btn stretched-link {
-  background-color: #FFFFFF;
-  border: none;
-  color: #484848;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.3rem;
-  border-radius: 0.5rem;
-  max-width: 220px;
-  padding: 0.5rem 0rem;
-}
-
-.custom-button {
-  background-color: #FFFFFF;
-  border: none;
-  color: #484848;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.3rem;
-  border-radius: 0.5rem;
-  max-width: 220px;
-  padding: 0.5rem 0rem;
-}
-
-.custom-button a {
-  font-family: "Proxima Nova", sans-serif;
-  color: #5CAFBC;
-}
-
-.custom-button p {
-  margin-top: 0;
-  margin-bottom: 0rem;
-  color: #5CAFBC;
-}
-
-.store-button {
-  background-color: #5CAFBC;
-  border: none;
-  color: #FFFFFF;
-  font-family: "Proxima Nova", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.9rem;
-  border-radius: 0.5rem;
-  max-width: 220px;
-  padding: 0.5rem 0rem;
-}
-
-.store-button a {
-  color: #FFFFFF;
-}
-
-.store-button p {
-  align: right;
-  margin-top: 0;
-  margin-bottom: 0rem;
-  color: #484848;
-}
-
-.github-button {
-  background-color: #45DCC2;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.9rem;
-  border-radius: 0.5rem;
-  max-width: 220px;
-  padding: 0.5rem 0rem;
-}
-
-.github-button a {
-  color: #484848;
-}
-
-.github-button p {
-  align: right;
-  margin-top: 0;
-  margin-bottom: 0rem;
-  color: #484848;
-}
 
 /* Hover over images to change
-
 /* Parent Container */
 .content_img {
   position: relative;
