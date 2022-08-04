@@ -8,34 +8,32 @@
 
     <title>Tutorials &#8212; SkillHub 0.0.0 documentation</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
     <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Terms and Conditions" href="../Contact/disclaimer_terms_conditions.html" />
-    <link rel="prev" title="How to edit Open Ephys Docs" href="edit_our_docs.html" />
+    <link rel="next" title="Mapping Channels" href="Channel_Mapping.html" />
+    <link rel="prev" title="Impedance" href="../Content/Electronics/impedance.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -43,7 +41,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -73,8 +71,8 @@
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../Ephys%20Acquisition/index.html">
-  Electrophysiology Acquisition
+ <a class="reference internal nav-link" href="../Content/index.html">
+  All Topics
  </a>
 </li>
 
@@ -124,7 +122,29 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Channel_Mapping.html">
+   Mapping Channels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Miniscope_Assembly.html">
+   Assembling an OEPS V4.4 Miniscope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="edit_our_docs.html">
+   How to edit Open Ephys Docs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Using%20OE%20Acquisition%20Board%20for%20EEG.html">
+   Using the OE Acquisition Board for EEG
+  </a>
+ </li>
+</ul>
+
   </div>
 </nav>
               </div>
@@ -163,7 +183,9 @@
               <div>
                 
   <section id="tutorials">
-<span id="reftutorial"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<span id="reftutorial"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
 <p><a class="reference internal" href="Channel_Mapping.html#mapping-channels"><span class="std std-ref">Mapping Channels</span></a></p>
 <p><a class="reference internal" href="Miniscope_Assembly.html#assembling-an-oeps-v4-4-miniscope"><span class="std std-ref">Assembling an OEPS V4.4 Miniscope</span></a></p>
 </section>
@@ -174,17 +196,17 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="edit_our_docs.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../Content/Electronics/impedance.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">How to edit Open Ephys Docs</p>
+            <p class="prev-next-title">Impedance</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../Contact/disclaimer_terms_conditions.html" title="next page">
+    <a class='right-next' id="next-link" href="Channel_Mapping.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Terms and Conditions</p>
+        <p class="prev-next-title">Mapping Channels</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -196,8 +218,9 @@
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  <footer class="footer mt-5 mt-md-0">
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
@@ -208,7 +231,7 @@
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     
